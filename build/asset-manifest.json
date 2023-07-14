@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8f220213.css",
+    "main.js": "/static/js/main.4f812148.js",
+    "static/js/787.f62ade7f.chunk.js": "/static/js/787.f62ade7f.chunk.js",
+    "static/media/Crescent Isle.jpg": "/static/media/Crescent Isle.1e611ca1cd318e53db9a.jpg",
+    "static/media/Mirage Mountain.jpg": "/static/media/Mirage Mountain.1e611ca1cd318e53db9a.jpg",
+    "static/media/Nameless Cavern.jpg": "/static/media/Nameless Cavern.1e611ca1cd318e53db9a.jpg",
+    "static/media/Soaring in the Sky.jpg": "/static/media/Soaring in the Sky.1e611ca1cd318e53db9a.jpg",
+    "static/media/Rusturf Tunnel.jpg": "/static/media/Rusturf Tunnel.00711a639fca145ed16c.jpg",
+    "static/media/Route 127.jpg": "/static/media/Route 127.8f3e2bbb14f223bbe282.jpg",
+    "static/media/Route 128.jpg": "/static/media/Route 128.6fb9fce28c9cb1906107.jpg",
+    "static/media/Route 134.jpg": "/static/media/Route 134.d6525295ffce1f15f71a.jpg",
+    "static/media/Route 126.jpg": "/static/media/Route 126.71f33d4f6de9de1ceb50.jpg",
+    "static/media/Seafloor Cavern.jpg": "/static/media/Seafloor Cavern.1099c5ff68883b9d10e0.jpg",
+    "static/media/Mt. Pyre.jpg": "/static/media/Mt. Pyre.7bf0344802ae4650c66f.jpg",
+    "static/media/Route 124.jpg": "/static/media/Route 124.14b869c86a7a3261ff6c.jpg",
+    "static/media/Marine Cave.jpg": "/static/media/Marine Cave.a1365f8cce53f5ebf30d.jpg",
+    "static/media/Terra Cave.jpg": "/static/media/Terra Cave.997057622246a4ae6637.jpg",
+    "static/media/Jagged Pass.jpg": "/static/media/Jagged Pass.7e93944327e16b4f885c.jpg",
+    "static/media/Mirage Tower.jpg": "/static/media/Mirage Tower.9072f728f62acefe7660.jpg",
+    "static/media/Route 113.jpg": "/static/media/Route 113.cede61a64ad0ccfe11e8.jpg",
+    "static/media/Route 114.jpg": "/static/media/Route 114.7edc81141275260fb952.jpg",
+    "static/media/Lavaridge Town.jpg": "/static/media/Lavaridge Town.cc69b7d3d807d0d5f4cf.jpg",
+    "static/media/Mt. Chimney.jpg": "/static/media/Mt. Chimney.dbf866120daf1c8094c1.jpg",
+    "static/media/Meteor Falls.jpg": "/static/media/Meteor Falls.e8949a4bd3dc8061668c.jpg",
+    "static/media/Verdanturf Town.jpg": "/static/media/Verdanturf Town.9e000b8481e9c945623a.jpg",
+    "static/media/Route 111.jpg": "/static/media/Route 111.e49439181dec9f8791a2.jpg",
+    "static/media/Pacifidlog Town.jpg": "/static/media/Pacifidlog Town.e33c2ab0c61312f64d86.jpg",
+    "static/media/hoenn.png": "/static/media/hoenn.7c6ca92a9dddbdcc6607.png",
+    "static/media/Fallarbor Town.jpg": "/static/media/Fallarbor Town.b4c059dac644c99f6bea.jpg",
+    "index.html": "/index.html",
+    "main.8f220213.css.map": "/static/css/main.8f220213.css.map",
+    "main.4f812148.js.map": "/static/js/main.4f812148.js.map",
+    "787.f62ade7f.chunk.js.map": "/static/js/787.f62ade7f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8f220213.css",
+    "static/js/main.4f812148.js"
+  ]
+}
