@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import GameMap from "./GameMap";
 import GameResult from "./GameResult";
 import { Button } from "@mui/material";
-import { PlayArrow } from "@mui/icons-material";
+import { CloseSharp, LocationSearching, PlayArrow } from "@mui/icons-material";
 
 const useSelectArea = () => {
   const [selectedArea, setSelectedArea] = useState('Littleroot Town');
@@ -23,6 +23,7 @@ export default function Game() {
     const [isActive, setIsActive] = useState(false);
     const [image, setImage] = useState('Littleroot Town');
     const [answer, setAnswer] = useState('');
+    const [isMapOpen, setIsMapOpen] = useState(false);
 
     function importAll(r: any) {
       let images: any = {};
@@ -56,47 +57,76 @@ export default function Game() {
       }
 
       setIsActive(false);
+      setIsMapOpen(false);
     }
 
     return (
     <React.Fragment>
       <div style={
       {"position": "absolute",
-      "left": "65%",
+      "left": "50%",
       "top": "50%",
       "transform": "translate(-50%, -50%)",
       }} > 
-        
-        { answer === '' ?
-        <img src={images[image]} /> :
+        { answer === '' && !isMapOpen ?
+        <div style={
+          {"display": "flex",
+          "flexDirection": "column",
+          "justifyContent": "flex-start",
+          }}>
+        <Button 
+          variant="contained" 
+          onClick={() => setIsMapOpen(true)} 
+          startIcon={<LocationSearching />} > Map 
+        </Button>
+        <p>{selectedArea}</p>
+        <img src={images[image]} />
+        </div> :
         <div/>
         }
 
       </div>
 
-
-    <div style={
-      {"position": "absolute",
-      "left": "50%",
-      "top": "50%",
-      "transform" : "translate(-50%, -50%)",
-      }}>
-      {answer === '' ?
-      <div/> : 
-      <GameResult actual={selectedArea} expected={answer} />
-      }
-    </div>
+      <div style={
+        {"position": "absolute",
+        "left": "50%",
+        "top": "50%",
+        "transform" : "translate(-50%, -50%)",
+        }}>
+        {answer === '' ?
+        <div/> : 
+        <GameResult actual={selectedArea} expected={answer} />
+        }
+      </div>
 
       <div style={
       {"position": "absolute",
-      "left": "35%",
-      "top": "51%",
+      "left": "50%",
+      "top": "45%",
       "transform": "translate(-50%, -50%)",
       }} > 
-        {isActive ?
-        <div>
-        <GameMap changeSelectedArea={changeSelectedArea} />
+        {isMapOpen && isActive ?
+        <div style={{
+        "display": "flex",
+        "flexDirection": "column",
+        }}>
+        <div style={{
+        "display": "flex",
+        "flexDirection": "row",
+        }} >
         <p>{selectedArea}</p>
+        <Button 
+          style={{
+            "position": "absolute",
+            "top": "8%",
+            "left" : "88%",
+            "right": "0%",
+          }} 
+          onClick={() => setIsMapOpen(false)}
+          startIcon={<CloseSharp />} 
+        />
+        </div>
+        <GameMap changeSelectedArea={changeSelectedArea} />
         </div> :
         <div />
         }
@@ -104,7 +134,7 @@ export default function Game() {
       
       <div style ={
         {"position": "absolute",
-        "top" : "70%",
+        "top" : "80%",
         }}
       >
       {isActive ?
