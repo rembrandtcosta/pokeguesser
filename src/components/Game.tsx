@@ -5,7 +5,7 @@ import { Button } from "@mui/material";
 import { CloseSharp, LocationSearching, PlayArrow } from "@mui/icons-material";
 
 const useSelectArea = () => {
-  const [selectedArea, setSelectedArea] = useState('Littleroot Town');
+  const [selectedArea, setSelectedArea] = useState('');
   
   const changeSelectedArea = (e: string) => {
     setSelectedArea(e)
@@ -37,6 +37,7 @@ export default function Game() {
 
     function setRandomImage() {
       setIsActive(true);
+      changeSelectedArea('');
       setAnswer('');
       setImage(getRandomImage(images));
     }
